@@ -32,6 +32,11 @@ color: ${(props) => props.theme.text};
 display:flex;
 justify-content: space-between;
 align-content: center;
+
+a{
+    color: green;
+}
+
 `
 const Box = styled.div`
 width:45%;
@@ -65,25 +70,25 @@ const Faq = () => {
             <Title>FAQ</Title>
             <Container>
                 <Box>
-                    <Accordion title="Where can i view my NFTS?" >
-                    Once minted or bought simply connect to OpenSea and check your profile to view your NFTs.
+                    <Accordion title="Where can I view my NFTS?" >
+                    Once minted or bought simply connect to <a href="https://opensea.io">OpenSea</a> and check your profile to view your NFTs.
                     </ Accordion>
-                    <Accordion title="Where can i view my NFTS?" >
-                    Once minted or bought simply connect to your OpenSea account to view your NFTs.
+                    <Accordion title="Why Blockheads?" >
+                    The name has different meanings. Block(chain)heads, but also because their heads are made out of geometric blocks, as well as a blockhead by <a href="https://www.merriam-webster.com/dictionary/blockhead">definition</a>: noun INFORMAL a stupid person.
                     </ Accordion>
-                    <Accordion title="Where can i view my NFTS?" >
-                    Once minted or bought simply connect to your OpenSea account to view your NFTs.
+                    <Accordion title="Which blockchain and what is the mint cost?" >
+                    Blockheads are ERC-721 NFTs terrorising the world of Ethereum. You can join the OG gang for 0.0075 ETH.
                     </ Accordion>
                 </Box>
                 <Box>
-                <Accordion title="Where can i view my NFTS?" >
-                    Once minted or bought simply connect to your OpenSea account to view your NFTs.
+                <Accordion title="What are the benefits of holding a blockhead?" >
+                    This collection comes with great benefits package. To start, it allows users to earn a passive income by staking your NFT, it grants a discount for a Blockheads clothes collection, once merch store is live. As well as each NFT holder will be gifted a mystery box. There is also a Most Wanted lottery, where you can instantly win up to 1ETH prize!
                     </ Accordion>
-                    <Accordion title="Where can i view my NFTS?" >
-                    Once minted or bought simply connect to your OpenSea account to view your NFTs.
+                    <Accordion title="What rewards can I expect from a mystery box?" >
+                    Mystery boxes will be packed with Ethereum prizes, other ERC-20 tokens and NFTs. *only valid upon 100% mint completion.
                     </ Accordion>
-                    <Accordion title="Where can i view my NFTS?" >
-                    Once minted or bought simply connect to your OpenSea account to view your NFTs.
+                    <Accordion title="These guys are wearing a pretty cool clothes, can I purchase any?" >
+                    Once the mint is complete, you will be able to purchase most of the designs form the merchandise store. Including: hoodies, T-s, jackets, belts, baseball caps and other accessories. Apart from guns, swords and grenades. See your local black market dealer for those. Stay tuned for more details!
                     </ Accordion>
                 </Box>
             </Container>

@@ -4,8 +4,8 @@ import ConfettiComponent from '../Confetti'
 
 import img1 from '../../assets/Nfts/71.png';
 import img2 from '../../assets/Nfts/148.png';
-import img3 from '../../assets/Nfts/7950.png';
-import img4 from '../../assets/Nfts/8006.png';
+import img3 from '../../assets/Nfts/5770.png';
+import img4 from '../../assets/Nfts/4059.png';
 import img5 from '../../assets/Nfts/8286.png';
 import img6 from '../../assets/Nfts/8450.png';
 import img7 from '../../assets/Nfts/8508.png';
@@ -79,6 +79,7 @@ img{
     border-radius: 20px;
     transition: all 0.2s ease;
     border: 1px solid ${(props) => props.theme.text};
+    filter: blur(8px);
 }
 `
 const Name = styled.h2`
@@ -130,17 +131,17 @@ const Team = () => {
             <Title>Most Wanted</Title>
             <Container>
                 <EmptyItem>&nbsp;</EmptyItem>
-                <MemberComponent img={img1} name="The Boss" id="BOGC #" position="Prize: 1 ETH"/>
-                <MemberComponent img={img2} name="Underboss" id="BOGC #" position="Prize: 0.5 ETH"/>
+                <MemberComponent img={img1} name="The Boss" id="BOGC #****" position="Prize: 1 ETH"/>
+                <MemberComponent img={img2} name="Underboss" id="BOGC #****" position="Prize: 0.5 ETH"/>
                 <EmptyItem>&nbsp;</EmptyItem>
-                <MemberComponent img={img3} name="Captain" id="BOGC #" position="Prize: 0.4 ETH"/>
-                <MemberComponent img={img4} name="Pet Shop Boy" id="BOGC #" position="Prize: 0.3 ETH"/>
-                <MemberComponent img={img5} name="Violent Tony" id="BOGC #" position="Prize: 0.3 ETH"/>
-                <MemberComponent img={img6} name="The Chemist" id="BOGC #" position="Prize: 0.1 ETH"/>
-                <MemberComponent img={img7} name="SK8" id="BOGC #" position="Prize: 0.1 ETH"/>
-                <MemberComponent img={img8} name="Bully" id="BOGC #" position="Prize: 0.1 ETH"/>
-                <MemberComponent img={img9} name="Assasin" id="BOGC #" position="Prize: 0.1 ETH"/>
-                <MemberComponent img={img10} name="Punk" id="BOGC #" position="Prize: 0.1 ETH" />
+                <MemberComponent img={img3} name="Captain" id="BOGC #****" position="Prize: 0.4 ETH"/>
+                <MemberComponent img={img4} name="Pet Shop Boy" id="BOGC #****" position="Prize: 0.3 ETH"/>
+                <MemberComponent img={img5} name="Violent Tony" id="BOGC #****" position="Prize: 0.3 ETH"/>
+                <MemberComponent img={img6} name="The Chemist" id="BOGC #****" position="Prize: 0.1 ETH"/>
+                <MemberComponent img={img7} name="SK8" id="BOGC #****" position="Prize: 0.1 ETH"/>
+                <MemberComponent img={img8} name="Bully" id="BOGC #****" position="Prize: 0.1 ETH"/>
+                <MemberComponent img={img9} name="Assasin" id="BOGC #****" position="Prize: 0.1 ETH"/>
+                <MemberComponent img={img10} name="Punk" id="BOGC #****" position="Prize: 0.1 ETH" />
 
 
             </Container>
