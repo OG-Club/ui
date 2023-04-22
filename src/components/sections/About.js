@@ -70,12 +70,12 @@ a{
     outline: none;
     border: none;
     font-size: ${props => props.theme.fontmd};
-    padding: 0.9rem 2.3rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.2s ease;
     position: relative;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     &:hover{
         transform: scale(0.9);
     }
@@ -120,8 +120,8 @@ const About = () => {
                     </SubTextLight>
                     <ButtonContainer>
                     <ThemeProvider theme={dark}>
-                    <a href="https://twitter.com">Twitter</a>
-                    <a href="https://instagram.com">Instagram</a>
+                    <a href="https://twitter.com/nft_og_club" rel="_blank">Twitter</a>
+                    <a href="https://www.instagram.com/og_club_nft/">Instagram</a>
                     <a href="https://discord.com">Discord</a>
                     </ThemeProvider>
                     </ButtonContainer>

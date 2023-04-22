@@ -77,7 +77,7 @@ const Faq = () => {
                     The name has different meanings. Block(chain)heads, but also because their heads are made out of geometric blocks, as well as a blockhead by <a href="https://www.merriam-webster.com/dictionary/blockhead">definition</a>: noun INFORMAL a stupid person.
                     </ Accordion>
                     <Accordion title="Which blockchain and what is the mint cost?" >
-                    Blockheads are ERC-721 NFTs terrorising the world of Ethereum. You can join the OG gang for 0.0075 ETH.
+                    Blockheads are ERC-721 NFTs terrorising the world of Ethereum. You can join the OG gang for 0.007 ETH.
                     </ Accordion>
                 </Box>
                 <Box>

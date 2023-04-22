@@ -67,7 +67,7 @@ const Navigation = () => {
                     <MenuItem onClick={() => scrollTo('wanted')} >Most Wanted</MenuItem>
                     <MenuItem onClick={() => scrollTo('faq')} >FAQ</MenuItem>
                 </Menu>
-                <Button text="Mint on OpenSea" link="https://opensea.io"/>
+                <Button text="Mint on OpenSea" href="https://opensea.io"/>
             </NavBar>
         </Section>
     )
