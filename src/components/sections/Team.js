@@ -28,7 +28,7 @@ color: ${(props) => props.theme.body};
 display: flex;
 justify-content: center;
 align-items: center;
-margin: 1rem auto;
+margin: 0 auto;
 padding-top: 0.6rem;
 border-bottom: 2px solid ${(props) => props.theme.body};
 width: fit-content;
