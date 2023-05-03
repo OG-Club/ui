@@ -11,6 +11,10 @@ video{
     border: 1px solid ${props => props.theme.text};
     border-radius: 30%;
 }
+
+@media (max-width: 64em) {
+    min-width: 40vh;
+}
 `
 
 const CoverVideo = () => {

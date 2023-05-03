@@ -41,6 +41,14 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 flex-wrap: wrap;
+
+@media (max-width: 64em) {
+  width: 80%;  
+}
+@media (max-width: 48em) {
+    width: 90%;  
+    justify-content: center;
+  }
 `
 const EmptyItem = styled.div`
 width: calc(20rem - 4vw);
@@ -64,6 +72,9 @@ z-index:5;
         transform: translateY(-1rem) scale(1.1);
     }
 }
+@media (max-width: 64em) {
+    width: 90vw;  
+  }
 `
  
 const ImageContainer = styled.div`

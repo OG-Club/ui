@@ -22,6 +22,20 @@ margin: 0 auto;
 display: flex;
 justify-content: center;
 align-items: center;
+
+@media (max-width: 70em) {
+    width:85%;
+}
+
+@media (max-width: 64em) {
+    width: 100%;
+    flex-direction: column;
+
+    &>*:last-child{
+        width:80%;
+    }
+}
+
 `
 const Box = styled.div`
 width: 50%;
@@ -30,6 +44,10 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+
+@media (max-width: 64em) {
+    min-height: 50vh;
+}
 `
 const Title = styled.h2`
 font-size: ${props => props.theme.fontxxl};
@@ -38,6 +56,14 @@ width: 80%;
 color: ${props => props.theme.body};
 align-self: flex-start;
 margin: 0 auto;
+
+@media (max-width: 64em) {
+    width: 100%;
+    text-align: center;
+}
+@media (max-width: 40em) {
+    font-size: ${props => props.theme.fontxl};
+}
 `
 
 const SubText = styled.p`
@@ -47,6 +73,11 @@ color: ${props => props.theme.body};
 align-self: flex-start;
 margin: 1rem auto;
 font-weight: 400;
+
+@media (max-width: 64em) {
+    width: 100%;
+    text-align: center;
+}
 `
 
 const SubTextLight = styled.p`
@@ -56,12 +87,25 @@ width: 80%;
 color: ${props => `rgba(${props.theme.bodyRgba},0.6)`};
 align-self: flex-start;
 margin: 0 auto;
+
+@media (max-width: 64em) {
+    width: 100%;
+    text-align: center;
+}
 `
 const ButtonContainer = styled.div`
 width: 80%;
+display: flex;
 align-self: flex-start;
 margin: 2rem auto;
 
+@media (max-width: 64em) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1 auto;
+}
 
 a{
     display: inline-block;
@@ -96,7 +140,15 @@ a{
         transform: translate(-50%, -50%) scale(1);
         padding: 0.3rem;
     }
-    
+    @media (max-width: 64em) {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem; 
+        padding: 1rem;
+        text-align: center; 
+        
+    }
     `
 
 
@@ -120,9 +172,9 @@ const About = () => {
                     </SubTextLight>
                     <ButtonContainer>
                     <ThemeProvider theme={dark}>
-                    <a href="https://twitter.com/nft_og_club" rel="_blank">Twitter</a>
-                    <a href="https://www.instagram.com/og_club_nft/">Instagram</a>
-                    <a href="https://discord.com">Discord</a>
+                    <a href="https://twitter.com/nft_og_club" target="blank">Twitter</a>
+                    <a href="https://www.instagram.com/og_club_nft/" target="blank">Instagram</a>
+                    <a href="https://discord.com" target="blank">Discord</a>
                     </ThemeProvider>
                     </ButtonContainer>
                 </Box>

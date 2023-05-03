@@ -11,6 +11,13 @@ color: ${props => props.theme.text};
 display: relative;
 flex-direction: column;
 z-index: 3;
+
+@media (max-width: 64em) {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    align-self: center;
+  }
 `
 
 

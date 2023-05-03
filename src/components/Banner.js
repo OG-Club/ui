@@ -23,6 +23,9 @@ align-items: center;
 
 overflow: hidden;
 z-index: 3;
+@media (max-width: 64em) {
+min-height: 100vh;
+}
 `
 
 const ImgContainer = styled.div`
@@ -34,7 +37,15 @@ justify-content: space-between;
 img{
     height: 30vh;
     width: 30vh;
+    @media (max-width: 64em) {
+        height: 50vh;
+        width: 50vh;
+    }
 }
+@media (max-width: 64em) {
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 

@@ -19,6 +19,20 @@ margin: 0 auto;
 display: flex;
 justify-content: center;
 align-items: center;
+
+@media (max-width: 64em) {
+    width: 90%;
+}
+@media (max-width: 64em) {
+flex-direction: column-reverse;
+width: 100%;
+
+&>*:first-child{
+    width: 100%;
+    margin-top: 2rem;
+}
+}
+
 `
 
 const Box = styled.div`
@@ -33,6 +47,10 @@ const rotate = keyframes`
 100%{
     transform: rotate(1turn);
 }
+@media (max-width: 48em) {
+    display: none;
+}
+
 `
 
 const Round = styled.div`
@@ -44,11 +62,20 @@ height: 6rem;
 border: 1px solid ${props => props.theme.text};
 border-radius: 50%;
 cursor: pointer;
+@media (max-width: 48em) {
+    display: none;
+}
+
 img{
     width: 100%;
     height: auto;
     animation: ${rotate} 6s linear infinite reverse;
+    @media (max-width: 48em) {
+        display: none;
+    }
+
 }
+
 `
 const Circle = styled.div`
 width: 3rem;
@@ -64,6 +91,11 @@ transform: translate(-50%, -50%);
 background-color:  ${props => props.theme.text};
 color:  ${props => props.theme.body};
 font-size:  ${props => props.theme.fontxl};
+
+@media (max-width: 48em) {
+    display: none;
+}
+
 `
 
 const Home = () => {

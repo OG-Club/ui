@@ -26,18 +26,39 @@ const Container = styled.div`
 width: 25vw;
 height: 70vh;
 
+@media (max-width: 70em) {
+    width: 35vw;
+    height: 60vh;
+}
+
+@media (max-width: 64em) {
+    width: 55vw;
+    height: 40vh;
+    
+}
+
 .swiper{
     width:100%;
     height: 100%;
+    @media (max-width: 70em) {
+        width: 80%;
+    }
+    @media (max-width: 64em) {
+        width: 60%;
+    }
+    @media (max-width: 40em) {
+        width: 90%;
+    }
+}
 }
 
 .swiper-slide{
-    background-color: ${props => props.theme.carouselColor};
+    
     border-radius: 20px;
-
+    
     display: flex;
     justify-content: center;
-    align-items: cebter;
+   
 }
 
 .swiper-button-next{
@@ -53,6 +74,12 @@ height: 70vh;
     &:after{
         display: none;
     }
+    @media (max-width: 64em) {
+        width: 3rem;
+    }
+    @media (max-width: 30em) {
+        width: 2rem;
+    }
 }
 
 .swiper-button-prev{
@@ -67,6 +94,12 @@ height: 70vh;
 
     &:after{
         display: none;
+    }
+    @media (max-width: 64em) {
+        width: 3rem;
+    }
+    @media (max-width: 30em) {
+        width: 2rem;
     }
 }
 `

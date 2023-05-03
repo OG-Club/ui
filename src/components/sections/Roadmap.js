@@ -20,6 +20,11 @@ align-items: center;
 margin: 1rem auto;
 border-bottom: 2px solid ${(props) => props.theme.text};
 width: fit-content;
+
+@media (max-width: 48em) {
+    font-size: ${(props) => props.theme.fontxl};
+}
+
 `
 const Container = styled.div`
 width: 70%;
@@ -29,6 +34,17 @@ margin: 0 auto;
 display: flex;
 justify-content: center;
 position: relative;
+
+@media (max-width: 64em) {
+    width: 80%;
+}
+@media (max-width: 48em) {
+    width: 90%;
+}
+@media (max-width: 40em) {
+    width: 95%;
+}
+}
 `
 const SvgContainer = styled.div`
 display: flex;
@@ -44,39 +60,71 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 
+@media (max-width: 48em) {
+    width: 90%;
+}
+
 &>*:nth-of-type(2n +1){
     justify-content: start;
 
+    @media (max-width: 48em) {
+        justify-content: center;
+    }
     div{
         border-radius: 50px 0 50px 0;
         text-align: right;
+
+        @media (max-width: 48em) {
+            border-radius: 50px 0 50px 0;
+            text-align: left;
+            p{
+                border-radius: 40px 0 40px 0;
+            }
+        }
     }
     p{
         border-radius: 40px 0 40px 0;
     }
 }
-&>*:nth-of-type(2n +2){
+&>*:nth-of-type(2n){
     justify-content: end;
+
+    @media (max-width: 48em) {
+        justify-content: center;
+    }
+
     div{
         border-radius:0 50px 0 50px;
         text-align: left;
+
     }
     p{
         border-radius:0 40px 0 40px;
     }
 }
 }
+
 `
 const Item = styled.li`
 width: 100%;
 height: 100%;
 display: flex;
+
+@media (max-width: 48em) {
+    justify-content: flex-end !important;
+}
+
 `
 const ItemContainer = styled.div`
 width: 40%;
 height: fit-content;
 padding: 1rem;
 border: 3px solid ${(props) => props.theme.text};
+
+@media (max-width: 48em) {
+    width: 70%;
+}
+
 `
 const Box = styled.p`
 height: fit-content;
@@ -92,6 +140,11 @@ display: block;
 font-size: ${(props) => props.theme.fontxl};
 text-transform: capitalize;
 color: ${(props) => props.theme.text};
+@media (max-width: 48em) {
+    font-size: ${(props) => props.theme.fontlg};
+    font-weight: 600;
+}
+
 `
 
 const Text = styled.span`
@@ -101,6 +154,9 @@ text-transform: capitalize;
 color: ${(props) => props.theme.text};
 font-weight: 400;
 margin: 0.5rem 0;
+@media (max-width: 48em) {
+    font-size: ${(props) => props.theme.fontsm};
+}
 `
 
 const RoadMapItem = ({ title, subtext, addToRef}) => {
